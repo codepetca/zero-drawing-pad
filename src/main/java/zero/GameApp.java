@@ -20,7 +20,7 @@ import javafx.stage.Stage;
  * Each frame calls update(seconds), then draw, on the JavaFX application thread.
  * Keep callbacks short: slow work blocks drawing and normal JavaFX controls.
  */
-public abstract class SketchApp extends SimpleApp {
+public abstract class GameApp extends SimpleApp {
     private Canvas canvas;
     private BorderPane layout;
     private GraphicsContext graphics;
@@ -84,7 +84,7 @@ public abstract class SketchApp extends SimpleApp {
                     update(seconds);
                     draw();
                 } catch (RuntimeException | Error failure) {
-                    SketchApp.this.stop(); // Stop the timer and clear held input after a failed frame.
+                    GameApp.this.stop(); // Stop the timer and clear held input after a failed frame.
                     throw failure;
                 }
             }
