@@ -1,5 +1,7 @@
 # Drawing pad
 
+[![Built with Zero](https://img.shields.io/badge/Built%20with-Zero-6C5CE7)](https://zero.codepet.ca)
+
 Paint with the mouse; clear with the secondary button.
 
 This is a complete editable Zero project.
